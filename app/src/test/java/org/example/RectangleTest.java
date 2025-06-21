@@ -26,4 +26,9 @@ public class RectangleTest {
         assertEquals(Shape.class, rectangle.getClass().getSuperclass());
     }
     
+    @Test
+    void testNumberOfSides() {
+        Rectangle rectangle = new Rectangle(4.0, 5.0);
+        assertEquals(4, rectangle.numberOfSides());
+    }
 }

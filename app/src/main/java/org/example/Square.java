@@ -14,5 +14,11 @@ public class Square extends Rectangle {
         setLength(side);
         setWidth(side); // Update both length and width to maintain square properties
     }
-    
+    /*
+     * The Square class extends Rectangle, inheriting its properties and methods.
+     * So it does not need to implement getArea() and getPerimeter() again,
+     * as they are already defined in Rectangle.
+     * Also the numberOfSides() method is inherited from Rectangle,
+     * which returns 4, as a square is a type of rectangle.
+     */
 }

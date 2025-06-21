@@ -26,4 +26,10 @@ public class IsocelesRightTriangleTest {
         IsocelesRightTriangle triangle = new IsocelesRightTriangle(5.0);
         assertEquals(RightTriangle.class, triangle.getClass().getSuperclass());
     }
+
+    @Test
+    void testNumberOfSides() {
+        IsocelesRightTriangle triangle = new IsocelesRightTriangle(5.0);
+        assertEquals(3, triangle.numberOfSides());
+    }
 }

@@ -26,5 +26,10 @@ public class RightTriangleTest {
         RightTriangle triangle = new RightTriangle(3.0, 4.0);
         assertEquals(Shape.class, triangle.getClass().getSuperclass());
     }
-    
+
+    @Test
+    void testNumberOfSides() {
+        RightTriangle triangle = new RightTriangle(3.0, 4.0);
+        assertEquals(3, triangle.numberOfSides());
+    }
 }

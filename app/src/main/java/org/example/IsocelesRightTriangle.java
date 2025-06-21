@@ -17,5 +17,11 @@ public class IsocelesRightTriangle extends RightTriangle{
         super.setBase(legLength);
         super.setHeight(legLength);
     }
-    
+    /*
+     * The IsocelesRightTrianle class extends RightTrieangle, inheriting its properties and methods.
+     * So it does not need to implement getArea() and getPerimeter() again,
+     * as they are already defined in RightTrieangle.
+     * Also the numberOfSides() method is inherited from RightTrieangle,
+     * which returns 3, as a IsocelesRightTrianle is a type of RightTrieangle.
+     */
 }

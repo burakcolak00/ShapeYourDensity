@@ -24,4 +24,10 @@ public class SquareTest {
         Square square = new Square(4.0);
         assertEquals(Rectangle.class, square.getClass().getSuperclass());
     }
+
+    @Test
+    void testNumberOfSides() {
+        Square square = new Square(4.0);
+        assertEquals(4, square.numberOfSides());
+    }
 }
